@@ -5,3 +5,13 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body {
+  background: white;
+  margin:0;
+}
+
+header {
+  background-color: #47606C;
+  display: flex;
+}
