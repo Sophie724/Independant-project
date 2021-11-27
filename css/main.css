@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 *, *::before, *::after {
@@ -104,7 +105,7 @@ Video {
 }
 
 .overview-pic {
- width: 100%
+ width: 100%;
 }
 
 .hover-box {
@@ -175,8 +176,23 @@ Video {
 }
 
 .email {
-  border: solid 2px #45706E;
+  border: solid 3px #45706E;
+  border-radius: 5px;
 }
+
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navigation li a {
+    text-decoration: none;
+}
+
  /*@media only screen and (min-width: 25em){
 
 }
