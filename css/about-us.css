@@ -16,10 +16,47 @@ body {
   margin:0;
 }
 
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #45706E;
+}
+
+.white {
+  color: #fff;
+}
+
 header {
   background-color: #47606C;
   display: flex;
   width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+cursor: pointer;
+margin-right: auto;
+}
+
+.navigation {
+  margin-right: 22rem;
+  list-style: none;
+}
+
+.navigation li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-list {
+    color: white;
+    font-size: 20px;
+}
+
+.navigation li a:hover {
+  color: #688FA5;
+  border: 2px solid #fff;
+  padding: 1rem;
 }
 
 main img {
@@ -34,7 +71,7 @@ main img {
 
 .hover > section{
   position: absolute;
-  bottom: -14em;
+  bottom: -11em;
   width: 100%;
   padding: .5rem;
   margin: 0;
@@ -49,20 +86,236 @@ main img {
 
 .hover p {
   margin: 1rem 1rem 2rem 2rem;
-  font-size: 20px;
+  font-size: 13px;
 }
 
 .hover h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 10rem;
+  font-size: 5rem;
   padding-left: 1rem;
 }
 
 .navigation {
+  max-width: 35px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .navigation li a {
     text-decoration: none;
+}
+
+.staff-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.staff {
+text-align: center;
+}
+
+.mission p {
+  margin-right: 1.5rem;
+  margin-left: 1rem;
+  margin-top: 0rem;
+}
+
+.mission-title {
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+}
+
+.mission-pic {
+  width: 100%;
+}
+
+footer {
+  background-color: #47606C;
+  padding: 1rem;
+}
+
+.social {
+    float: right;
+}
+
+.social a {
+  color: white;
+}
+
+.mission-title {
+  font-size: 30px;
+}
+
+.icon {
+  width: 30px;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-icon {
+  margin: 0 auto;
+  width: 75px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.type {
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+}
+
+/*.contact-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1rem 1rem;
+  gap: 1.5rem;
+}
+
+
+.contact-type {
+  display: block;
+  margin: 0 0 0 9rem;
+}
+
+.contact {
+  text-align: center;
+}
+
+.type {
+  text-align: center;
+}
+
+*/
+
+
+
+
+
+
+
+@media only screen and (min-width: 38em){
+  .hover p {
+    font-size: 20px;
+  }
+
+  .hover h1 {
+    font-size: 6rem;
+  }
+
+  .hover > section{
+    position: absolute;
+    bottom: -13rem;
+    width: 100%;
+    padding: .5rem;
+    margin: 0;
+    text-align: left;
+    background-color: linear-gradient(to buttom, rgba(0,0,0,0),rgba(0,0,0,.5));
+  }
+
+  .mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mission p,
+  .mission h1  {
+    margin: 1rem 1.5rem 1rem 2rem;
+  }
+
+.contact {
+  text-align: center;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.icon {
+  width: 30px;
+  align-self:
+}
+
+
+.contact-info{
+  gap: 1rem;
+}
+
+.contact-icon {
+  width: 100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 62.5em){
+.hover p {
+  font-size: 25px;
+}
+
+.hover h1 {
+  font-size: 10rem;
+}
+
+.hover > section{
+  position: absolute;
+  bottom: -15em;
+  width: 100%;
+  padding: .5rem;
+  margin: 0;
+  text-align: left;
+  background-color: linear-gradient(to buttom, rgba(0,0,0,0),rgba(0,0,0,.5));
+}
+
+.staff-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 1rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.staff {
+text-align: center;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.contact-icon {
+  width: 100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 }
