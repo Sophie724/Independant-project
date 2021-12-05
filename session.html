@@ -3,37 +3,41 @@
 <head>
   <meta charset="utf-8">
   <title>Session</title>
+  <link rel="icon" href="images/logo-16.svg">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/session.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header role="banner">
-    <img src="images/logo-256.svg" alt="illustration of logo">
+    <img src="images/logo-256.svg" alt="illustration of logo" class="logo">
     <nav role="navigation">
       <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="session.html">Session</a></li>
-        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="index.html" class="nav-list">Home</a></li>
+        <li><a href="session.html" class="nav-list">Session</a></li>
+        <li><a href="about-us.html" class="nav-list">About</a></li>
       </ul>
     </nav>
   </header>
 
   <main role="main">
-        <h1>Session</h1>
-          <article class="session">
-          <section>
+    <h1>Session</h1>
+    <article class="session">
+      <section>
+        <img src="images/basic-session.jpg" alt="" class="session-pic">
         <h2>Basic session<i>$150</i></h2>
         <p>This session is suitable for everyone. Basic session offer deversity size of images.
           <br>- Up to 2 hours photography in Ontario.
           <br>- One location(If the other location is close we will be acceptable for two location), one pet, and maximum two people from the same family.
           <br>- choose 30-40 image, and we offer the edit service.
           <br>- can bring your own pet toy, we also offer that.</p>
-          <a href="#">PURCHASE</a>
+          <a href="#" class="purchase-1">PURCHASE</a>
         </section>
 
+
         <section>
+          <img src="images/all-day-session.jpg" alt="" class="session-pic">
           <h2>All Day Session <i>$850</i></h2>
           <p>This session is suitable for people who want to record a day of their fluffy family memeber. Annual session offer deversity size of images.
             <br>- Unlimited photography in Ontario.
@@ -41,46 +45,116 @@
             <br>- choose 50-60 image, and we offer the edit service.
             <br>- can bring your own pet toy and, we also offer that.
             <br>- can bring your own pet food, we also offer that but there will be an additional fee for that.</p>
-            <a href="#">PURCHASE</a>
+            <a href="#" class="purchase-1">PURCHASE</a>
           </section>
 
-        <h2>Anniversary Session <i>$650</i></h2>
-        <a href="#">PURCHASE</a>
-</article>
+          <section >
+            <img src="images/anninversay.jpg" alt="" class="session-pic">
+            <h2>Anniversary Session <i>$650</i></h2>
+            <a href="#" class="purchase-1">PURCHASE</a>
+          </section>
+        </article>
 
-<h1>Print</h1>
-<article class="print">
-        <h2>Photos</h2>
-        <h2>Photos with flame</h2>
-        <h2>Storyboard</h2>
-        <h2>Albums</h2>
-        <h2>Digitals</h2>
-        <h2>Illustration</h2>
-</article>
+        <h1>Print</h1>
+        <article class="print">
+          <h2>Photos</h2>
+          <h2>Photos with flame</h2>
+          <h2>Storyboard</h2>
+          <h2>Albums</h2>
+          <h2>Digitals</h2>
+          <h2>Illustration</h2>
+        </article>
 
-<h1>Profolio</h1>
-<article class="profolio">
-        <h2>Dogs</h2>
-        <h2>Cats</h2>
-        <h2>Animals and People</h2>
-        <h2>Other animals</h2>
-      </article>
+        <h1>Profolio</h1>
+        <article class="profolio">
+<section>
+          <h2>Dogs</h2>
+
+          <div class="container">
+
+          <input type="radio" name="images" id="i1" checked>
+          <input type="radio" name="images" id="i2">
+          <input type="radio" name="images" id="i3">
+
+            <div class="slide-img" id="one">
+             <img src="images/profolio-dog-1.jpg" alt="" class="session-pic">
+
+             <label for="i3" class="pre"></label>
+             <label for="i2" class="nxt"></label>
+
+            </div>
+
+            <div class="slide-img" id="two">
+             <img src="images/profolio-dog-2.jpg" alt="" class="session-pic">
+
+             <label for="i1" class="pre"></label>
+             <label for="i3" class="nxt"></label>
+
+            </div>
+
+            <div class="slide-img" id="three">
+             <img src="images/profolio-dog-3.jpg" alt="" class="session-pic">
+
+             <label for="i2" class="pre"></label>
+             <label for="i1" class="nxt"></label>
+
+            </div>
+
+
+            <div class="nav">
+              <label class="dots" id="dot1" for="i1"></label>
+              <label class="dots" id="dot2" for="i2"></label>
+              <label class="dots" id="dot3" for="i3"></label>
+
+          </div>
+</section>
+          <h2>Cats</h2>
+          <h2>Animals and People</h2>
+          <h2>Other animals</h2>
+        </article>
 
         <h1>Booking Step</h1>
 
         <h1>FAQ</h1>
 
-        <h1>Talk to us!</h1>
-        <p>Hi, Thank you all for picking us to record you are your flurry family member! It would be nice if you could leave some feedbacks or your session experience with us. We will be provide you a 5% discount after you provide us your experience and feedback! Thank you all! <3 </p>
+        <div class="talk">
+          <section>
           <h4>Name</h4>
           <h4>Email</h4>
           <h4>Message</h4>
-
           <h3>Submit</h3>
+        </section>
+        <section>
+          <img src="images/talk-to-us.jpg" alt="" class="talk-pic">
+          <h1>Talk to us!</h1>
+          <p>Hi, Thank you all for picking us to record you are your flurry family member! It would be nice if you could leave some feedbacks or your session experience with us. We will be provide you a 5% discount after you provide us your experience and feedback! Thank you all! <3 </p>
+          </section>
+          </div>
         </main>
-        <footer role="footer">
-          <p>follow us!</p>
 
+        <footer role="footer">
+
+          <section class="social">
+          <h1>follow us!</h1>
+
+
+            <a href="error.html">
+              <img src="images/facebook.png" alt="" class="icon">
+            </a>
+
+            <a href="error.html">
+              <img src="images/pinterest.png" alt="" class="icon">
+            </a>
+
+            <a href="error.html">
+              <img src="images/twitter.png" alt="" class="icon">
+            </a>
+
+            <a href="error.html">
+              <img src="images/instagram.png" alt="" class="icon">
+            </a>
+          </section>
         </footer>
+
       </body>
       </html>

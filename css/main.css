@@ -18,7 +18,7 @@ body {
 }
 
 .container .wrapper {
-width: 99vw;
+max-width: 100%;
 height: 95vh;
 margin: 0rem auto;
 animation: slide 10s ease infinite;
@@ -72,18 +72,53 @@ overflow: hidden;
   height: 15px;
   width: 15px;
   border-radius: 3rem;
-  background-color: lightcyan;
+  background-color: rgba(228, 234, 240, 0.73);
   margin: .4rem .3rem;
 }
 
 header {
   background-color: #47606C;
   display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
 }
+
+.logo {
+cursor: pointer;
+margin-right: auto;
+margin-top: .5rem;
+margin-bottom: .5rem;
+margin-left: .5rem;
+width: 105px;
+height: 138px;
+}
+
+.navigation {
+  margin-right: 0rem;
+  list-style: none;
+}
+
+.navigation li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-list {
+    color: white;
+    font-size: 20px;
+}
+
+.navigation li a:hover {
+  color: #688FA5;
+  border: 2px solid #fff;
+  padding: 1rem;
+}
+
 
 Video {
   display: flex;
-  margin: 0rem .5rem 1rem 1rem;
+  margin: 0rem 1rem 1rem 1rem;
 }
 
 .giveaway-video {
@@ -94,7 +129,7 @@ Video {
 }
 
 .giveaway {
-  margin: 0rem 1rem 1rem 1rem;
+  margin: 0rem 1rem 1rem 2rem;
 }
 
 .overview {
@@ -109,42 +144,40 @@ Video {
 }
 
 .hover-box {
-  width: 441px;
-  height: 663px;
+  width: 343.66px;
+  height: 515.48px;
   position: relative;
   cursor: pointer;
 }
 
-.hover-box h2 {
-  bottom: -4;
-  width: 100%;
-  padding: 1rem;
-  margin: 0;
-  margin-top: 20rem;
-  text-align: center;
-  background-color: linear-gradient(to buttom, rgba(0,0,0,0), rgba(0,0,0,.5));
-  transition: all .5s linear;
+.hover-box:hover .hover-color-box {
+  width: 343.66px;
+
 }
 
-.hover-box:hover h2,
-.hover-box:focus h2 {
-  bottom:0;
+.hover-box img {
+  display: box;
+  width: 343.66px;
+  height: 515.48px;
 }
 
 .hover-color-box {
   width: 0px;
-  height: 663px;
-  background-color: rgba(71,96,109,0.4);
-  top: 85.5rem;
+  height: 515.48px;
+  background: rgba(228,234,240,0.73);
   position: absolute;
+  top: -31.25rem;
+  display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  transition: 0.7s ease;
+  transition: 0.5s ease;
 }
 
-.hover-box:hover .hover-coloir-box {
-  width: 441px;
+.hover-color-box h2 {
+color: white;
+font-size: 50 px;
+
 }
 
 .newsletter {
@@ -178,10 +211,16 @@ Video {
 .email {
   border: solid 3px #45706E;
   border-radius: 5px;
+  padding: 1rem;
+  font-weight: bolder;
+  margin-left: 5rem;
+  text-align: left;
+  font-weight: bold;
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
+  color: #45706E;
 }
 
 .navigation {
@@ -192,6 +231,47 @@ h2 {
 .navigation li a {
     text-decoration: none;
 }
+
+.sign {
+  color: #fff;
+  background-color: #45706E;
+  margin: 1.5rem 3rem 1.5rem 1.5rem;
+  border: 2px solid #45706E;
+  border-radius: 5px;
+  padding-top: .5rem;
+}
+
+.sign-email {
+display: grid;
+grid-template-columns: 2fr 1fr;
+margin: 0rem 1rem;
+color: #45706E;
+}
+
+.dots:hover {
+color: #455F6C;
+}
+
+.icon {
+  width: 30px;
+  align
+}
+
+
+@media only screen and (min-width: 38em){
+
+}
+
+@media only screen and (min-width: 62.5em){
+
+  .hover-box {
+    width: 441px;
+    height: 663px;
+    position: relative;
+    cursor: pointer;
+  }
+}
+
 
  /*@media only screen and (min-width: 25em){
 

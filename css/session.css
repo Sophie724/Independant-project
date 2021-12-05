@@ -15,6 +15,35 @@ body {
 header {
   background-color: #47606C;
   display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+cursor: pointer;
+margin-right: auto;
+}
+
+.navigation {
+  margin-right: 0rem;
+  list-style: none;
+}
+
+.navigation li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-list {
+    color: white;
+    font-size: 20px;
+}
+
+.navigation li a:hover {
+  color: #688FA5;
+  border: 2px solid #fff;
+  padding: 1rem;
 }
 
 .session {
@@ -44,4 +73,151 @@ h2 {
 
 .navigation li a {
     text-decoration: none;
+}
+
+.session-pic {
+  width: 100%;
+}
+
+.session {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.purchase-1 {
+  text-decoration: none;
+  padding: .5rem;
+  text-align: center;
+  border: solid 4px #47606C;
+  border-radius: 3px;
+}
+
+.talk {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.talk-pic {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+  width: 70%;
+  height: 0;
+  padding-bottom: 40%;
+  background: #000;
+  border: solid 10px #c3c3c3;
+}
+
+.slide-img {
+  position: absolute;
+  width:100%;
+  height: 100%;
+}
+
+.slide-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+  width: 70%;
+  height: 0;
+  padding-bottom: 40%;
+  background: black;
+  border: #c3c3c3;
+}
+
+.slide_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide_img img {
+  width: 100%;
+  height: 100%;
+}
+
+#i1,#i2, #i3 {
+  display: none;
+}
+
+.pre, .nxt{
+  width: 12%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(88,88,88,.4);
+  z-index: 99;
+  cursor: pointer;
+}
+
+.pre {
+  left: 0;
+}
+
+.nxt {
+  right: 0;
+}
+
+.nav {
+  width: 100;
+  height: 11px;
+  bottom: 12%;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+  margin-left: 12rem;
+}
+
+.dots {
+  top: -5px;
+  width: 18px;
+  height: 18px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(0,0,0,.4);
+}
+
+.slide_img{
+  z-index: -1;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three{
+  z-index: 9;
+}
+
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3{
+  background: #fff;
+}
+
+main {
+margin: 1rem;
+}
+
+.footer {
+  background-color: #47606C;
+  padding: 1rem;
+}
+
+.social {
+    float: right;
+}
+
+.icon {
+  width: 30px;
+  align-self:
 }
