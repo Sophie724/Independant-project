@@ -79,9 +79,8 @@ overflow: hidden;
 header {
   background-color: #47606C;
   display: flex;
-  width: 100%;
-  justify-content: flex-end;
   align-items: center;
+  height: 150px;
 }
 
 .logo {
@@ -89,30 +88,32 @@ cursor: pointer;
 margin-right: auto;
 margin-top: .5rem;
 margin-bottom: .5rem;
-margin-left: .5rem;
-width: 105px;
-height: 138px;
+margin-left: 2rem;
+width: 140px;
+height: 172px;
 }
 
-.navigation {
-  margin-right: 0rem;
+.navigation-box {
+  margin-right: 1.5rem;
   list-style: none;
+
 }
 
-.navigation li {
+.navigation-box li {
   display: inline-block;
   padding: 0px 20px;
+  text-decoration: none;
 }
 
 .nav-list {
     color: white;
     font-size: 20px;
+    text-decoration: none;
 }
 
-.navigation li a:hover {
+.navigation-box li a:hover {
   color: #688FA5;
   border: 2px solid #fff;
-  padding: 1rem;
 }
 
 
@@ -122,8 +123,6 @@ Video {
 }
 
 .giveaway-video {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   margin-bottom: 0rem;
   margin-top: 1rem;
 }
@@ -252,13 +251,68 @@ color: #45706E;
 color: #455F6C;
 }
 
-.icon {
-  width: 30px;
-  align
+.footer {
+  background-color: #47606C;
+  padding: 1rem;
+  height: 200px;
+}
+
+.social {
+  text-align:right;
+  margin-top:  1rem;
+  margin-right: 2rem;
 }
 
 
+footer{
+  background-color: #47606C;
+  width: auto;
+  height: 150px;
+  z-index: -1;
+}
+
+.icon {
+  width: 40px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.icon:hover {
+  border: 3px solid #688FA5;
+}
+
+
+
 @media only screen and (min-width: 38em){
+
+  header {
+    background-color: #47606C;
+    display: flex;
+    align-items: center;
+    height: 150px;
+  }
+
+  .logo {
+  cursor: pointer;
+  margin-right: auto;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: 2rem;
+  width: 140px;
+  height: 172px;
+  }
+
+  .giveaway-video {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+  }
+
+  .giveaway {
+    margin: 0rem 1rem 1rem 2rem;
+  }
+
 
 }
 

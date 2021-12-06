@@ -10,41 +10,50 @@ html {
 body {
   background: white;
   margin:0;
+  line-height: 1.5;
 }
 
 header {
   background-color: #47606C;
   display: flex;
-  width: 100%;
-  justify-content: flex-end;
   align-items: center;
+  height: 150px;
 }
 
 .logo {
 cursor: pointer;
 margin-right: auto;
+margin-top: .5rem;
+margin-bottom: .5rem;
+margin-left: 2rem;
+width: 140px;
+height: 172px;
 }
 
-.navigation {
-  margin-right: 0rem;
+.navigation-box {
+  margin-right: 3rem;
   list-style: none;
+
 }
 
-.navigation li {
+.navigation-box li {
   display: inline-block;
   padding: 0px 20px;
+  text-decoration: none;
 }
 
 .nav-list {
     color: white;
     font-size: 20px;
+    text-decoration: none;
 }
 
-.navigation li a:hover {
+.navigation-box li a:hover {
   color: #688FA5;
   border: 2px solid #fff;
-  padding: 1rem;
 }
+
+
 
 .session {
   display: grid;
@@ -52,8 +61,19 @@ margin-right: auto;
   gap: 1rem;
 }
 
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #47606C;
+    text-align: center;
+}
+
 h2 {
   font-family: 'Playfair Display', serif;
+  font-size: 24px;
+}
+
+p {
+  font-size: 15px;
 }
 
 .print {
@@ -64,6 +84,27 @@ h2 {
 .profolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.slider {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  overflow-x: auto;
+
+ -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  width: 500px;
+  flex-shrink: 0;
+  height: 100%;
+  background-color: blue;
+}
+
+.slides > div {
+  scroll-snap-align: start;
 }
 
 .navigation {
@@ -80,16 +121,43 @@ h2 {
 }
 
 .session {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
 }
 
-.purchase-1 {
+.session div {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+}
+
+.session p {
+  flex-grow: 1;
+}
+
+.session li {
+  list-style-type: disc;
+  font-size: 12px;
+    margin-bottom: .5rem;
+}
+
+.session div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: rgba(71,96,108,1);
+  font-weight: bold;
+  border-radius: 12px;
+  border: solid 3px #47606C;
   text-decoration: none;
   padding: .5rem;
-  text-align: center;
-  border: solid 4px #47606C;
-  border-radius: 3px;
+  font-size: 12px;
+}
+
+.session a:hover {
+  background: rgba(71,96,108,1);
+  color: white;
+  border-radius: 15px;
 }
 
 .talk {
@@ -97,8 +165,51 @@ h2 {
   grid-template-columns: 1fr 1fr;
 }
 
+.talk a{
+ justify-content: center;
+  align-items: center;
+  color: rgba(71,96,108,1);
+  font-weight: bold;
+  border-radius: 12px;
+  border: solid 3px #47606C;
+  text-decoration: none;
+  padding: .5rem;
+  font-size: 15px;
+  margin-left: 1rem;
+}
+
+.name,
+.email {
+  padding: .5rem 0rem 1rem .5rem;
+  border-radius: 7px;
+  border: solid 3px #47606C;
+  margin:1rem;
+  font-weight: bolder;
+  font-size: 14px;
+  color: #47606c;
+  box-sizing: inherit;
+  position: relative;
+}
+
+.message {
+  padding: .5rem 0rem 10rem .5rem;
+  border-radius: 7px;
+  border: solid 3px #47606C;
+  margin:1rem;
+  font-weight: bolder;
+  font-size: 14px;
+  color: #47606c;
+}
+
+.talk a:hover {
+  background: rgba(71,96,108,1);
+  color: white;
+  border-radius: 15px;
+}
+
 .talk-pic {
   width: 100%;
+  height: auto;
 }
 
 .container {
@@ -112,97 +223,6 @@ h2 {
   border: solid 10px #c3c3c3;
 }
 
-.slide-img {
-  position: absolute;
-  width:100%;
-  height: 100%;
-}
-
-.slide-img img {
-  width: 100%;
-  height: 100%;
-}
-
-.container {
-  margin: 0 auto;
-  margin-top: 20px;
-  position: relative;
-  width: 70%;
-  height: 0;
-  padding-bottom: 40%;
-  background: black;
-  border: #c3c3c3;
-}
-
-.slide_img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.slide_img img {
-  width: 100%;
-  height: 100%;
-}
-
-#i1,#i2, #i3 {
-  display: none;
-}
-
-.pre, .nxt{
-  width: 12%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  background: rgba(88,88,88,.4);
-  z-index: 99;
-  cursor: pointer;
-}
-
-.pre {
-  left: 0;
-}
-
-.nxt {
-  right: 0;
-}
-
-.nav {
-  width: 100;
-  height: 11px;
-  bottom: 12%;
-  position: absolute;
-  text-align: center;
-  z-index: 99;
-  margin-left: 12rem;
-}
-
-.dots {
-  top: -5px;
-  width: 18px;
-  height: 18px;
-  margin: 0 4px;
-  position: relative;
-  border-radius: 50%;
-  display: inline-block;
-  background: rgba(0,0,0,.4);
-}
-
-.slide_img{
-  z-index: -1;
-}
-
-#i1:checked ~ #one,
-#i2:checked ~ #two,
-#i3:checked ~ #three{
-  z-index: 9;
-}
-
-#i1:checked ~ .nav #dot1,
-#i2:checked ~ .nav #dot2,
-#i3:checked ~ .nav #dot3{
-  background: #fff;
-}
 
 main {
 margin: 1rem;
@@ -211,13 +231,127 @@ margin: 1rem;
 .footer {
   background-color: #47606C;
   padding: 1rem;
+  height: 200px;
 }
 
 .social {
-    float: right;
+  text-align:right;
+  margin-top:  1rem;
+  margin-right: 2rem;
+}
+
+
+footer{
+  background-color: #47606C;
+  width: auto;
+  height: 150px;
+  z-index: -1;
 }
 
 .icon {
-  width: 30px;
-  align-self:
+  width: 40px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+
+.icon:hover {
+  border: 3px solid #688FA5;
+}
+
+.number {
+  width: 20%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.submit {
+  align-items: center;
+}
+
+.type {
+  text-align: center;
+}
+
+
+
+
+
+@media only screen and (min-width: 38em){
+
+  .session div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: rgba(71,96,108,1);
+    font-weight: bold;
+    border-radius: 12px;
+    border: solid 3px #47606C;
+    text-decoration: none;
+    padding: .5rem;
+    font-size: 15px;
+  }
+
+  .name,
+  .email {
+    padding: .5rem 0rem 2rem .5rem;
+    border-radius: 7px;
+    border: solid 3px #47606C;
+    margin:1rem;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #47606c;
+    box-sizing: inherit;
+    position: relative;
+  }
+
+  .message {
+    padding: .5rem 0rem 18rem .5rem;
+    border-radius: 7px;
+    border: solid 3px #47606C;
+    margin:1rem;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #47606c;
+  }
+
+  .talk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media only screen and (min-width: 62.5em){
+
+  .name,
+  .email {
+    padding: .5rem 0rem 4rem .5rem;
+    border-radius: 7px;
+    border: solid 3px #47606C;
+    margin:1rem;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #47606c;
+    box-sizing: inherit;
+    position: relative;
+  }
+
+  .message {
+    padding: .5rem 0rem 25rem .5rem;
+    border-radius: 7px;
+    border: solid 3px #47606C;
+    margin:1rem;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #47606c;
+  }
+
 }
