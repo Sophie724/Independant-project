@@ -13,74 +13,16 @@ body {
   margin:0;
 }
 
-.container {
-  position: relative;
-}
-
-.container .wrapper {
-max-width: 100%;
-height: 95vh;
-margin: 0rem auto;
-animation: slide 10s ease infinite;
-overflow: hidden;
-}
-
-.container .slider-holder {
-  display: grid;
-  grid-template-columns: repeat(5, 100%);
-  height: 100%;
-}
-
-.container #slider-image-1{
-  background: lawngreen;
-  background: url('../images/banner-1.jpg');
-  background-size: cover;
-}
-
-.container #slider-image-2{
-  background: yellow;
-  background: url('../images/banner-2.jpg');
-  background-size: cover;
-}
-
-.container #slider-image-3{
-  background: tomato;
-  background: url('../images/banner-3.jpg');
-  background-size: cover;
-}
-
-.container #slider-image-4{
-  background: blue;
-  background: url('../images/banner-4.jpg');
-  background-size: cover;
-}
-
-.container #slider-image-5{
-  background: black;
-  background: url('../images/banner-5.jpg');
-  background-size: cover;
-}
-
-.container .button-holder {
-  position: absolute;
-  bottom: 0%;
-  left: 45%;
-}
-
-.container .button-holder .dots {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  border-radius: 3rem;
-  background-color: rgba(228, 234, 240, 0.73);
-  margin: .4rem .3rem;
+main img {
+  width: 100%;
+  height: auto;
 }
 
 header {
-  background-color: #47606C;
+  background: #456170;
   display: flex;
   align-items: center;
-  height: 150px;
+  height: 110px;
 }
 
 .logo {
@@ -89,19 +31,23 @@ margin-right: auto;
 margin-top: .5rem;
 margin-bottom: .5rem;
 margin-left: 2rem;
-width: 140px;
-height: 172px;
+width: 110px;
+height: auto;
+}
+
+.nav {
+  margin: 0 auto;
+    text-align: center;
 }
 
 .navigation-box {
   margin-right: 1.5rem;
   list-style: none;
-
 }
 
 .navigation-box li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 30px;
   text-decoration: none;
 }
 
@@ -115,7 +61,6 @@ height: 172px;
   color: #688FA5;
   border: 2px solid #fff;
 }
-
 
 Video {
   display: flex;
@@ -191,14 +136,14 @@ font-size: 50 px;
 
 .sign {
   text-decoration: none;
-  color: #45706E;
+  color: #688FA5;
 }
 
 .sign:hover {
   color: #D7792D;
 }
 
-.sing:focus {
+.sign:focus {
   color:#5B4E48;
 }
 
@@ -208,7 +153,7 @@ font-size: 50 px;
 }
 
 .email {
-  border: solid 3px #45706E;
+  border: solid 3px #456170;
   border-radius: 5px;
   padding: 1rem;
   font-weight: bolder;
@@ -219,7 +164,7 @@ font-size: 50 px;
 
 h2 {
   font-family: 'Playfair Display', serif;
-  color: #45706E;
+  color: #456170;
 }
 
 .navigation {
@@ -233,9 +178,9 @@ h2 {
 
 .sign {
   color: #fff;
-  background-color: #45706E;
+  background-color: #456170;
   margin: 1.5rem 3rem 1.5rem 1.5rem;
-  border: 2px solid #45706E;
+  border: 2px solid #456170;
   border-radius: 5px;
   padding-top: .5rem;
 }
@@ -244,7 +189,7 @@ h2 {
 display: grid;
 grid-template-columns: 2fr 1fr;
 margin: 0rem 1rem;
-color: #45706E;
+color: #456170;
 }
 
 .dots:hover {
@@ -252,7 +197,7 @@ color: #455F6C;
 }
 
 .footer {
-  background-color: #47606C;
+  background-color: #456170;
   padding: 1rem;
   height: 200px;
 }
@@ -265,7 +210,7 @@ color: #455F6C;
 
 
 footer{
-  background-color: #47606C;
+  background-color: #456170;
   width: auto;
   height: 150px;
   z-index: -1;
@@ -284,23 +229,6 @@ footer{
 
 
 @media only screen and (min-width: 38em){
-
-  header {
-    background-color: #47606C;
-    display: flex;
-    align-items: center;
-    height: 150px;
-  }
-
-  .logo {
-  cursor: pointer;
-  margin-right: auto;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  margin-left: 2rem;
-  width: 140px;
-  height: 172px;
-  }
 
   .giveaway-video {
     display: grid;
