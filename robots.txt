@@ -1,0 +1,4 @@
+Sitemap: https?://sophie724.github.io/Independant-project/sitemap.xml
+User-Agent: *
+ # (www.)?robotstxt.org
+Disallow:

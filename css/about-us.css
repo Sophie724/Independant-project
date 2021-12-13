@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 *, *::before, *::after {
@@ -13,27 +13,33 @@ html {
 
 body {
   background: white;
-  margin:0;
+  margin: 0;
   width: 100%;
   overflow-x: hidden;
   line-height: 1.5;
+}
+
+.skip-links {
+  left: 50%;
+  position: absolute;
+  transform: translateY(-100%);
 }
 
 header {
   background: #456170;
   display: flex;
   align-items: center;
-  height: 130px;
+  height: 8.125rem;
 }
 
 .logo {
-cursor: pointer;
-margin-right: auto;
-margin-top: .5rem;
-margin-bottom: .5rem;
-margin-left: 2rem;
-width: 130px;
-height: auto;
+  cursor: pointer;
+  margin-right: auto;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: 2rem;
+  width: 8.125rem;
+  height: auto;
 }
 
 .navigation {
@@ -44,33 +50,32 @@ height: auto;
 .navigation-box {
   margin-right: 3rem;
   list-style: none;
-
 }
 
 .navigation-box li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0 1.25rem;
   text-decoration: none;
 }
 
 .navigation li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .nav-list {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+  text-decoration: none;
 }
 
 .navigation-box li a:hover {
-  color: #688FA5;
-  border: 2px solid #fff;
+  color: #688fa5;
+  border: .125rem solid #fff;
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
-  color: #45706E;
+  font-family: "Playfair Display", serif;
+  color: #465170;
 }
 
 .white {
@@ -88,47 +93,39 @@ main img {
   color: #fff;
 }
 
-.hover > section{
+.hover > section {
   position: absolute;
   bottom: -11em;
   width: 100%;
   padding: .5rem;
   margin: 0;
   text-align: left;
-  background-color: linear-gradient(to buttom, rgba(0,0,0,0),rgba(0,0,0,.5));
-}
-
-.hover:hover section,
-.hover:focus section {
-  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .hover p {
   margin: 1rem 1rem 2rem 2rem;
-  font-size: 13px;
+  font-size: .813rem;
 }
 
 .hover h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 5rem;
   padding-left: 1rem;
-}
-
-.mission-title {
-  font-size: 30px;
 }
 
 .mission p {
   margin-right: 1.5rem;
   margin-left: 1rem;
-  margin-top: 0rem;
+  margin-top: 0;
 }
 
 .mission-title {
   margin-bottom: 1rem;
-  margin-top: 0rem;
+  margin-top: 0;
   margin-left: 1rem;
   margin-right: 1.5rem;
+  font-size: 1.875rem;
 }
 
 .mission-pic {
@@ -143,7 +140,7 @@ main img {
 }
 
 .staff {
-text-align: center;
+  text-align: center;
 }
 
 .contact-info {
@@ -153,7 +150,7 @@ text-align: center;
 
 .contact-icon {
   margin: 0 auto;
-  width: 75px;
+  width: 4.688rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -171,78 +168,75 @@ text-align: center;
 }
 
 .social a {
-  color: #47606c;
+  color: #456170;
+  margin: 0 .5rem;
 }
 
 .social a:hover {
-  color: #688FA5;
+  color: #688fa5;
+}
+
+.social {
+  text-align: center;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 0;
 }
 
 .footer {
   background-color: #456170;
   padding: 1rem;
-  height: 200px;
+  height: 12.5rem;
 }
 
-footer{
+footer {
   background-color: #456170;
   width: auto;
-  height: 160px;
+  height: 10rem;
   z-index: -1;
 }
 
 footer h3 {
   margin-left: 1rem;
   margin-right: 1rem;
-  font-family: 'Raleway', sans-serif;
-  font-size: 15px;
+  font-family: Raleway, sans-serif;
+  font-size: .938rem;
   text-align: center;
   color: #fff;
   margin-bottom: 3rem;
-  margin-top: 0rem;
+  margin-top: 0;
   padding-top: 1rem;
   font-weight: normal;
 }
 
-.social {
-  text-align: center;
-  margin-top:  1rem;
-  margin-right: 2rem;
-  margin-bottom: 0rem;
-}
-
-.social a {
-  margin: 0 .5rem;
-  color: #456170;
-}
-
 .icon {
-  width: 35px;
+  width: 2.188rem;
   margin: 0 auto;
   margin-top: 3rem;
 }
 
 .icon:hover {
-  border: 3px solid #688FA5;
+  border: 3px solid #688fa5;
 }
 
-@media only screen and (min-width: 38em){
+@media only screen and (min-width: 38em) {
+
   .hover p {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .hover h1 {
     font-size: 6rem;
   }
 
-  .hover > section{
+  .hover > section {
     position: absolute;
     bottom: -13rem;
     width: 100%;
     padding: .5rem;
     margin: 0;
     text-align: left;
-    background-color: linear-gradient(to buttom, rgba(0,0,0,0),rgba(0,0,0,.5));
+    background-color: rgba(0, 0, 0, .5);
   }
 
   .mission {
@@ -251,86 +245,69 @@ footer h3 {
   }
 
   .mission p,
-  .mission h1  {
+  .mission h1 {
     margin: 1rem 1.5rem 1rem 2rem;
   }
 
-.contact {
-  text-align: center;
-}
+  .contact {
+    text-align: center;
+  }
 
-.section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
+  .contact-info {
+    gap: 1rem;
+  }
 
-
-.contact-info{
-  gap: 1rem;
-}
-
-.contact-icon {
-  width: 100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
+  .contact-icon {
+    width: 6.25rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
 }
 
+@media only screen and (min-width: 62.5em) {
 
+  .hover p {
+    font-size: 1.563rem;
+  }
 
+  .hover h1 {
+    font-size: 10rem;
+  }
 
+  .hover > section {
+    position: absolute;
+    bottom: -18em;
+    width: 100%;
+    padding: .5rem;
+    margin: 0;
+    margin-left: 1rem;
+    text-align: left;
+    background-color: rgba(0, 0, 0, .5);
+  }
 
+  .staff-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: 1rem;
+    text-align: center;
+    gap: 1rem;
+  }
 
+  .staff {
+    text-align: center;
+  }
 
-
-
-
-
-
-
-
-@media only screen and (min-width: 62.5em){
-.hover p {
-  font-size: 25px;
-}
-
-.hover h1 {
-  font-size: 10rem;
-}
-
-.hover > section{
-  position: absolute;
-  bottom: -15em;
-  width: 100%;
-  padding: .5rem;
-  margin: 0;
-  text-align: left;
-  background-color: linear-gradient(to buttom, rgba(0,0,0,0),rgba(0,0,0,.5));
-}
-
-.staff-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-right: 1rem;
-  text-align: center;
-  gap: 1rem;
-}
-
-.staff {
-text-align: center;
-}
-
-
-
-.mission {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-right: 3rem;
-}
-
+  .mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 3rem;
+  }
 
 }
