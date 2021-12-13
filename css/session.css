@@ -14,10 +14,10 @@ body {
 }
 
 header {
-  background-color: #47606C;
+  background: #456170;
   display: flex;
   align-items: center;
-  height: 150px;
+  height: 130px;
 }
 
 .logo {
@@ -26,14 +26,18 @@ margin-right: auto;
 margin-top: .5rem;
 margin-bottom: .5rem;
 margin-left: 2rem;
-width: 140px;
-height: 172px;
+width: 130px;
+height: auto;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .navigation-box {
   margin-right: 3rem;
   list-style: none;
-
 }
 
 .navigation-box li {
@@ -48,12 +52,14 @@ height: 172px;
     text-decoration: none;
 }
 
+.navigation li a {
+    text-decoration: none;
+}
+
 .navigation-box li a:hover {
   color: #688FA5;
   border: 2px solid #fff;
 }
-
-
 
 .session {
   display: grid;
@@ -76,9 +82,49 @@ p {
   font-size: 15px;
 }
 
-.print {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.session-pic {
+  width: 100%;
+}
+
+.session {
+  display: flex;
+}
+
+.session div {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+}
+
+.session p {
+  flex-grow: 1;
+}
+
+.session li {
+  list-style-type: disc;
+  font-size: 14px;
+    margin-bottom: .5rem;
+}
+
+.session div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: rgba(71,96,108,1);
+  font-weight: bold;
+  border-radius: 12px;
+  border: solid 3px #47606C;
+  text-decoration: none;
+  padding: .5rem;
+  font-size: 10px;
+  margin: 0 auto;
+}
+
+.session a:hover {
+  background: rgba(71,96,108,1);
+  color: white;
+  border-radius: 15px;
 }
 
 .profolio {
@@ -107,57 +153,20 @@ p {
   scroll-snap-align: start;
 }
 
-.navigation {
+.number {
+  width: 20%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.navigation li a {
-    text-decoration: none;
+.numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.session-pic {
-  width: 100%;
-}
-
-.session {
-  display: flex;
-}
-
-.session div {
-  width: 33.33%;
-  display: flex;
-  flex-direction: column;
-}
-
-.session p {
-  flex-grow: 1;
-}
-
-.session li {
-  list-style-type: disc;
-  font-size: 12px;
-    margin-bottom: .5rem;
-}
-
-.session div a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  color: rgba(71,96,108,1);
-  font-weight: bold;
-  border-radius: 12px;
-  border: solid 3px #47606C;
-  text-decoration: none;
-  padding: .5rem;
-  font-size: 12px;
-}
-
-.session a:hover {
-  background: rgba(71,96,108,1);
-  color: white;
-  border-radius: 15px;
+.type {
+  text-align: center;
 }
 
 .talk {
@@ -168,14 +177,15 @@ p {
 .talk a{
  justify-content: center;
   align-items: center;
+  width: 50%;
   color: rgba(71,96,108,1);
   font-weight: bold;
   border-radius: 12px;
   border: solid 3px #47606C;
   text-decoration: none;
+  margin-left: 1rem;
   padding: .5rem;
   font-size: 15px;
-  margin-left: 1rem;
 }
 
 .name,
@@ -199,6 +209,10 @@ p {
   font-weight: bolder;
   font-size: 14px;
   color: #47606c;
+}
+
+.submit {
+  align-items: center;
 }
 
 .talk a:hover {
@@ -229,59 +243,52 @@ margin: 1rem;
 }
 
 .footer {
-  background-color: #47606C;
+  background-color: #456170;
   padding: 1rem;
   height: 200px;
 }
 
-.social {
-  text-align:right;
-  margin-top:  1rem;
-  margin-right: 2rem;
-}
-
-
 footer{
-  background-color: #47606C;
+  background-color: #456170;
   width: auto;
-  height: 150px;
+  height: 160px;
   z-index: -1;
 }
 
-.icon {
-  width: 40px;
-  margin: 0 auto;
-  margin-top: 2rem;
+footer h3 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 3rem;
+  margin-top: 0rem;
+  padding-top: 1rem;
+  font-weight: normal;
 }
 
+.social {
+  text-align: center;
+  margin-top:  1rem;
+  margin-right: 2rem;
+  margin-bottom: 0rem;
+}
+
+.social a {
+  margin: 0 .5rem;
+  color: #456170;
+}
+
+.icon {
+  width: 35px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
 
 .icon:hover {
   border: 3px solid #688FA5;
 }
-
-.number {
-  width: 20%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.numbers {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.submit {
-  align-items: center;
-}
-
-.type {
-  text-align: center;
-}
-
-
-
-
 
 @media only screen and (min-width: 38em){
 
@@ -297,6 +304,7 @@ footer{
     text-decoration: none;
     padding: .5rem;
     font-size: 15px;
+    margin: 0 auto;
   }
 
   .name,

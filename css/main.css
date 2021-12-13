@@ -7,22 +7,17 @@ html {
   box-sizing: inherit;
 }
 
-
 body {
   background: white;
   margin:0;
-}
-
-main img {
-  width: 100%;
-  height: auto;
+  line-height: 1.5;
 }
 
 header {
   background: #456170;
   display: flex;
   align-items: center;
-  height: 110px;
+  height: 130px;
 }
 
 .logo {
@@ -31,35 +26,40 @@ margin-right: auto;
 margin-top: .5rem;
 margin-bottom: .5rem;
 margin-left: 2rem;
-width: 110px;
+width: 130px;
 height: auto;
 }
 
-.nav {
-  margin: 0 auto;
-    text-align: center;
+.navigation {
+  align-items: center;
+  justify-content: space-around;
+
 }
 
-.navigation-box {
-  margin-right: 1.5rem;
-  list-style: none;
-}
-
-.navigation-box li {
+.navigation li {
   display: inline-block;
   padding: 0px 30px;
   text-decoration: none;
 }
 
-.nav-list {
+.navigation li a {
+    text-decoration: none;
+}
+
+.navigation-list {
     color: white;
     font-size: 20px;
     text-decoration: none;
 }
 
-.navigation-box li a:hover {
+.navigation li a:hover {
   color: #688FA5;
   border: 2px solid #fff;
+}
+
+main img {
+  width: 100%;
+  height: auto;
 }
 
 Video {
@@ -83,7 +83,7 @@ Video {
   gap: 1rem;
 }
 
-.overview-pic {
+.overview-image {
  width: 100%;
 }
 
@@ -94,15 +94,14 @@ Video {
   cursor: pointer;
 }
 
-.hover-box:hover .hover-color-box {
-  width: 343.66px;
-
-}
-
 .hover-box img {
   display: box;
   width: 343.66px;
   height: 515.48px;
+}
+
+.hover-box:hover .hover-color-box {
+  width: 343.66px;
 }
 
 .hover-color-box {
@@ -121,7 +120,6 @@ Video {
 .hover-color-box h2 {
 color: #688FA5;
 font-size: 50 px;
-
 }
 
 .newsletter {
@@ -133,9 +131,15 @@ font-size: 50 px;
   padding: 1rem 0rem;
 }
 
-.follow {
-  text-align: right;
-  margin-right: 1rem;
+.newsletter-first {
+  margin: 0 1rem;
+}
+
+.sign-email {
+display: grid;
+grid-template-columns: 2fr 1fr;
+margin: 0rem 1rem;
+color: #456170;
 }
 
 .email {
@@ -153,16 +157,7 @@ h2 {
   color: #456170;
 }
 
-.navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.navigation li a {
-    text-decoration: none;
-}
-
-.sign {
+.sign-button {
   text-decoration: none;
   color: #fff;
   background-color: #456170;
@@ -172,20 +167,9 @@ h2 {
   padding-top: .5rem;
 }
 
-.sign:hover {
+.sign-button:hover {
   background-color: #688FA5;
   border: 2px solid #688FA5;
-}
-
-.sign-email {
-display: grid;
-grid-template-columns: 2fr 1fr;
-margin: 0rem 1rem;
-color: #456170;
-}
-
-.dots:hover {
-color: #455F6C;
 }
 
 .footer {
@@ -194,38 +178,47 @@ color: #455F6C;
   height: 200px;
 }
 
-.social {
-  text-align:right;
-  margin-top:  1rem;
-  margin-right: 2rem;
-}
-
-
 footer{
   background-color: #456170;
   width: auto;
-  height: 150px;
+  height: 160px;
   z-index: -1;
 }
 
+footer h3 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 3rem;
+  margin-top: 0rem;
+  padding-top: 1rem;
+  font-weight: normal;
+}
+
+.social {
+  text-align: center;
+  margin-top:  1rem;
+  margin-right: 2rem;
+  margin-bottom: 0rem;
+}
+
+.social a {
+  margin: 0 .5rem;
+  color: #456170;
+}
+
 .icon {
-  width: 40px;
+  width: 35px;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .icon:hover {
   border: 3px solid #688FA5;
 }
-
-footer h3 {
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 0;
-  margin-top: 1rem;
-}
-
 
 @media only screen and (min-width: 38em){
 
@@ -240,7 +233,6 @@ footer h3 {
     margin: 0rem 1rem 1rem 2rem;
   }
 
-
 }
 
 @media only screen and (min-width: 62.5em){
@@ -252,36 +244,3 @@ footer h3 {
     cursor: pointer;
   }
 }
-
-
- /*@media only screen and (min-width: 25em){
-
-}
-
-@media only screen and (min-width: 38em){
-
-  nav ul {
-    list-style-type: none;
-    margin:0;
-    padding:0;
-    display: flex;
-    justify-content: space-between;
-    margin:1.5rem;
-    margin-left: 65rem;
-  }
-
-  nav li {
-      color: #fff;
-      list-style: none;
-  }
-
-  .giveaway {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .overview {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-}*/
