@@ -35,30 +35,36 @@ header {
   height: auto;
 }
 
-.navigation {
-  align-items: center;
-  justify-content: space-around;
+.navigation ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .navigation li {
   display: inline-block;
-  padding: 0 30px;
+  font-size: 1.05rem;
+  padding: 1rem;
+}
+
+.navigation {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navigation-box li a:hover {
+  color: #688fa5;
+  border: 2px solid #fff;
+}
+
+.nav-list {
+  color: white;
   text-decoration: none;
 }
 
 .navigation li a {
   text-decoration: none;
-}
-
-.navigation-list {
-  color: white;
-  font-size: 1.25rem;
-  text-decoration: none;
-}
-
-.navigation li a:hover {
-  color: #688fa5;
-  border: 2px solid #fff;
 }
 
 .banner-image {
@@ -251,6 +257,13 @@ footer h3 {
     font-size: 2.5rem;
     margin-top: 0;
   }
+
+  .navigation li {
+    display: inline-block;
+    font-size: 1.25rem;
+    padding: 3rem;
+  }
+
 }
 
 @media only screen and (min-width: 62.5em) {
@@ -260,6 +273,12 @@ footer h3 {
     height: 663px;
     position: relative;
     cursor: pointer;
+  }
+
+  .navigation li {
+    display: inline-block;
+    font-size: 1.25rem;
+    padding: 5rem;
   }
 
 }

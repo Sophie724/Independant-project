@@ -35,30 +35,22 @@ header {
   height: auto;
 }
 
-.navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.navigation-box {
-  margin-right: 3rem;
+.navigation ul {
   list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
-.navigation-box li {
+.navigation li {
   display: inline-block;
-  padding: 0 20px;
-  text-decoration: none;
+  font-size: 1.05rem;
+  padding: 1rem;
 }
 
-.nav-list {
-  color: white;
-  font-size: 1.25rem;
-  text-decoration: none;
-}
-
-.navigation li a {
-  text-decoration: none;
+.navigation {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .navigation-box li a:hover {
@@ -66,16 +58,39 @@ header {
   border: 2px solid #fff;
 }
 
+.nav-list {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation li a {
+  text-decoration: none;
+}
+
 .session-pic {
   width: 100%;
   height: auto;
+}
+
+.session {
+  display: flex;
+}
+
+.session article {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.session p {
+  flex-grow: 1;
 }
 
 .main article {
   margin-bottom: 1rem;
 }
 
-h1, h2{
+h1, h2 {
   font-family: "Playfair Display", serif;
   color: #47606c;
   text-align: center;
@@ -342,7 +357,7 @@ footer p {
   .session {
     display: flex;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem
+    gap: 1rem;
   }
 
   .session div {
@@ -361,6 +376,13 @@ footer p {
     margin-bottom: .5rem;
     text-align: left;
   }
+
+  .navigation li {
+    display: inline-block;
+    font-size: 1.25rem;
+    padding: 3rem;
+  }
+
 }
 
 @media only screen and (min-width: 62.5em) {
@@ -386,6 +408,12 @@ footer p {
     font-weight: bolder;
     font-size: .875rem;
     color: #47606c;
+  }
+
+  .navigation li {
+    display: inline-block;
+    font-size: 1.25rem;
+    padding: 5rem;
   }
 
 }
