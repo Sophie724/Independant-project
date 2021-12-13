@@ -20,9 +20,8 @@ body {
 }
 
 .skip-links {
-  left: 50%;
+  top: -6em;
   position: absolute;
-  transform: translateY(-100%);
 }
 
 header {

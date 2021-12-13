@@ -13,6 +13,11 @@ body {
   line-height: 1.5;
 }
 
+.skip-links {
+  position: absolute;
+  top: -6em;
+}
+
 header {
   background: #456170;
   display: flex;
@@ -56,23 +61,27 @@ header {
   border: 2px solid #fff;
 }
 
-.banner img {
+.banner-image {
   width: 100%;
   height: auto;
 }
 
-video {
-  display: flex;
-  margin: 0 1rem 1rem;
-}
-
-.giveaway-video {
-  margin-bottom: 0;
-  margin-top: 1rem;
-}
-
 .giveaway {
-  margin: 0 1rem 1rem 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.give-away {
+  width: 100%;
+  display: flex;
+  margin: 1rem;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  color: #456170;
+  font-size: 2.5rem;
+  margin-top: 0;
 }
 
 .overview {
@@ -108,7 +117,7 @@ video {
   height: 32.218rem;
   background: rgba(228, 234, 240, .73);
   position: absolute;
-  top: -31.25rem;
+  top: -32.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,7 +127,7 @@ video {
 
 .hover-color-box h2 {
   color: #688fa5;
-  font-size: 3.125rem;
+  font-size: 2.5rem;
 }
 
 .newsletter {
@@ -231,6 +240,17 @@ footer h3 {
     margin: 0 1rem 1rem 2rem;
   }
 
+  .giveawaysection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    font-family: "Playfair Display", serif;
+    color: #456170;
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
 }
 
 @media only screen and (min-width: 62.5em) {
