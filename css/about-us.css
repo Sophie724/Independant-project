@@ -80,6 +80,7 @@ h2 {
 
 .white {
   color: #fff;
+  margin: 0;
 }
 
 main img {
@@ -87,30 +88,35 @@ main img {
   margin-left: 1rem;
 }
 
-.hover {
+.hover-box {
   position: relative;
   overflow: hidden;
+  text-decoration: none;
   color: #fff;
 }
 
-.hover > section {
-  position: absolute;
-  bottom: -11em;
+.hover-box img {
+  display: block;
   width: 100%;
-  padding: .5rem;
-  margin: 0;
-  text-align: left;
+  filter: grayscale(100%);
+  transition: all .2s linear;
 }
 
-.hover:hover h2,
-.hover:focus h2 {
+.hover-box h1 {
+  position: relative;
   bottom: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  transition: all .2s linear;
 }
 
-.hover p {
-  margin: 1rem 1rem 2rem 2rem;
-  font-size: .813rem;
-}
+/*.hover-box:hover div,
+.hover-box:focus div {
+  bottom: 0;
+} */
+
 
 .hover h1 {
   font-family: "Playfair Display", serif;
@@ -235,23 +241,6 @@ footer h3 {
 
 @media only screen and (min-width: 38em) {
 
-  .hover p {
-    font-size: 1.25rem;
-  }
-
-  .hover h1 {
-    font-size: 6rem;
-  }
-
-  .hover > section {
-    position: absolute;
-    bottom: -13rem;
-    width: 100%;
-    padding: .5rem;
-    margin: 0;
-    text-align: left;
-    background-color: rgba(0, 0, 0, .5);
-  }
 
   .mission {
     display: grid;
@@ -292,25 +281,6 @@ footer h3 {
 }
 
 @media only screen and (min-width: 62.5em) {
-
-  .hover p {
-    font-size: 1.563rem;
-  }
-
-  .hover h1 {
-    font-size: 10rem;
-  }
-
-  .hover > section {
-    position: absolute;
-    bottom: -18em;
-    width: 100%;
-    padding: .5rem;
-    margin: 0;
-    margin-left: 1rem;
-    text-align: left;
-    background-color: rgba(0, 0, 0, .5);
-  }
 
   .staff-list {
     display: grid;
