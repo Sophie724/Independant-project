@@ -15,13 +15,18 @@ img {
   z-index: -1;
 }
 
+.skip-links {
+  top: -10em;
+  position: absolute;
+}
+
 h1, p, a {
   color: white;
   text-align: right;
 }
 
 h1 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-family: "Playfair Display", serif;
   margin: 1rem;
   margin-top: 5rem;
@@ -43,11 +48,11 @@ p {
   margin-right: 1rem;
 }
 
-a:hover {
+.main-page:hover {
   background: rgba(71, 96, 108, 1);
 }
 
-a {
+.main-page {
   text-decoration: none;
   font-size: .938rem;
   float: right;
@@ -63,7 +68,7 @@ a {
 @media only screen and (min-width: 38em) {
 
   h1 {
-    font-size: 2.188rem;
+    font-size: 2.75rem;
     font-family: "Playfair Display", serif;
     margin: 2rem;
     margin-top: 5rem;
@@ -71,7 +76,7 @@ a {
   }
 
   p {
-    font-size: 1.563rem;
+    font-size: 1.5rem;
     margin: 1rem;
     margin-top: 1rem;
     text-align: right;
@@ -79,7 +84,7 @@ a {
   }
 
   .p2 {
-    font-size: 1.563rem;
+    font-size: 1.5rem;
     margin: 1rem;
 
     text-align: right;
@@ -88,8 +93,7 @@ a {
   }
 
   a {
-    font-size: 1.25rem;
-
+    font-size: 1.5rem;
     text-align: right;
     margin-top: 1rem;
     margin-right: 2rem;
@@ -100,7 +104,7 @@ a {
 @media only screen and (min-width: 62.5em) {
 
   h1 {
-    font-size: 3.125rem;
+    font-size: 3.75rem;
     font-family: "Playfair Display", serif;
     margin: 2rem;
     margin-top: 5rem;
@@ -108,21 +112,21 @@ a {
   }
 
   p {
-    font-size: 1.875rem;
+    font-size: 2rem;
     margin: 1rem;
     margin-top: 2rem;
     margin-right: 6rem;
   }
 
   .p2 {
-    font-size: 1.875rem;
+    font-size: 2rem;
     margin: 1rem;
     margin-top: 0;
     margin-right: 9rem;
   }
 
   a {
-    font-size: 1.25rem;
+    font-size: 2rem;
     margin-right: 11rem;
     margin-top: 2rem;
   }

@@ -7,6 +7,19 @@ html {
   box-sizing: inherit;
 }
 
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
 body {
   background: white;
   margin: 0;
@@ -123,7 +136,7 @@ h1 {
   height: 32.218rem;
   background: rgba(228, 234, 240, .73);
   position: absolute;
-  top: -32.25rem;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +146,7 @@ h1 {
 
 .hover-color-box h2 {
   color: #688fa5;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .newsletter {

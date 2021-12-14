@@ -19,6 +19,11 @@ body {
   line-height: 1.5;
 }
 
+h3 {
+  font-size: 1.25rem;
+  margin: 1rem;
+}
+
 .skip-links {
   top: -6em;
   position: absolute;
@@ -76,6 +81,8 @@ header {
 h2 {
   font-family: "Playfair Display", serif;
   color: #465170;
+  margin-top: 0;
+  font-size: 2rem;
 }
 
 main img {
@@ -86,12 +93,12 @@ main img {
 .story {
   position: relative;
   overflow: hidden;
-  color: #E4EAF0;
+  color: #ffffff;
 }
 
 .story .box {
   position: absolute;
-  bottom: -8em;
+  bottom: -11em;
   width: 100%;
   padding: 1rem;
   margin: 0;
@@ -106,7 +113,7 @@ main img {
 
 .story h1 {
   font-family: "Playfair Display", serif;
-  font-size: 8rem;
+  font-size: 5rem;
   padding-left: 1rem;
   margin: 1rem;
 }
@@ -208,7 +215,7 @@ footer h3 {
   margin-left: 1rem;
   margin-right: 1rem;
   font-family: Raleway, sans-serif;
-  font-size: .938rem;
+  font-size: 1.25rem;
   text-align: center;
   color: #fff;
   margin-bottom: 3rem;
@@ -229,7 +236,22 @@ footer h3 {
 
 @media only screen and (min-width: 38em) {
 
+  .story h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 8rem;
+    padding-left: 1rem;
+    margin: 1rem;
+  }
 
+  .story .box {
+    position: absolute;
+    bottom: -8em;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    transition: all .2s linear;
+  }
   .mission {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -277,11 +299,11 @@ footer h3 {
   h2 {
     font-family: "Playfair Display", serif;
     color: #465170;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 0;
   }
 
