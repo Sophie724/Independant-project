@@ -93,7 +93,7 @@ main img {
 .story {
   position: relative;
   overflow: hidden;
-  color: #ffffff;
+  color: #fff;
 }
 
 .story .box {
@@ -252,6 +252,7 @@ footer h3 {
     text-align: center;
     transition: all .2s linear;
   }
+
   .mission {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -293,7 +294,7 @@ footer h3 {
 @media only screen and (min-width: 62.5em) {
 
   p {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
   }
 
   h2 {

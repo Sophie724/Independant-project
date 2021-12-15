@@ -82,6 +82,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .session p {
   flex-grow: 1;
 }
